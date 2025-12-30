@@ -1318,6 +1318,15 @@
   </svg>
 
 </div>
+    <audio id="bgSong" loop>
+  <source src="songg.mp3" type="audio/mpeg">
+    </audio>
+    <script>const audio = document.getElementById("bgSong");
+
+  document.body.addEventListener("click", function () {
+    audio.play();
+  }, { once: true });
+    </script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script><script  src="./script.js"></script>
 
   </body>
